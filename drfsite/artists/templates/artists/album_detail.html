@@ -1,0 +1,20 @@
+{% extends 'artists/base.html' %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+
+<h2><a href="{% url 'artist_detail' album.artist.id %}">{{ album.artist }}</a></h2>
+<p>{{ album.release_year }}</p>
+    <hr>
+    <p>Треки:</p>
+    <ul>
+        {% for song in songs %}
+            <li><a href="{% url 'song_detail' song.id %}">{{ song.title }}</a></li>
+        {% endfor %}
+    </ul>
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,86 @@
+{% load static %}
+
+
+
+
+body {
+    font-family: 'Raleway';
+    background-image: url('https://images.pexels.com/photos/7130497/pexels-photo-7130497.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover; /* Зробить зображення по розміру всього екрану */
+    background-repeat: no-repeat;
+
+    margin: 0;
+    padding-left: 0px;
+
+}
+.forsong{
+     justify-content: center;
+    align-items: center;
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.backround{padding-left: 20px; }
+
+h1 {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Стилі для меню навігації */
+
+
+/* Стилі для таблиці з артистами */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: white;
+}
+
+/* Стилі для посилань */
+a {
+
+    color: rgb(0,0,0); !important;
+
+    text-decoration: none;
+
+}
+
+a:hover {
+    font-size: 110%;
+    /*text-decoration: underline;*/
+    color: green; !important;
+}
+p{
+    font-size: 30px;
+}
+.custom-card {
+    background-color: rgba(255, 255, 255, 0) !important;
+
+     border: none !important;
+}
